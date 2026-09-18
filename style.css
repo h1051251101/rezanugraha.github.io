@@ -1,0 +1,226 @@
+
+/* ================================
+   1. PENGATURAN DASAR
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   2. HEADER
+================================ */
+
+header {
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    max-width: 800px;
+    margin: 10px auto 20px;
+}
+
+
+/* ================================
+   3. NAVIGASI
+================================ */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #b30000;
+    border-radius: 5px;
+}
+
+
+/* ================================
+   4. BERANDA
+================================ */
+
+#beranda {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#beranda h1 {
+    color: #b30000;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+#beranda h2 {
+    margin-top: 5px;
+    color: #444;
+}
+
+
+/* ================================
+   5. GARIS PEMISAH
+================================ */
+
+hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+/* ================================
+   6. MAIN
+================================ */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+
+/* ================================
+   7. ARTICLE
+================================ */
+
+article {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+article h1 {
+    color: #b30000;
+    font-size: 32px;
+}
+
+article p {
+    text-align: justify;
+}
+
+figure {
+    margin: 25px 0 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #666;
+}
+
+
+/* ================================
+   8. ASIDE
+================================ */
+
+aside {
+    background-color: #222;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+aside h2 {
+    color: #ff3333;
+    margin-top: 0;
+}
+
+aside h3 {
+    color: #ff3333;
+    margin-bottom: 5px;
+}
+
+aside p {
+    text-align: justify;
+}
+
+
+/* ================================
+   9. FOOTER
+================================ */
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ================================
+   10. TAMPILAN HP
+================================ */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #beranda {
+        margin: 20px;
+        padding: 25px 20px;
+    }
+
+    article {
+        padding: 20px;
+    }
+}
